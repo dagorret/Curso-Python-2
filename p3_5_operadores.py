@@ -16,5 +16,6 @@ print (10 % 3)
 print("División entera de 10 // 3")
 print (10 // 3)
 
+print("Potencia de 4 elevado a la 2")
 print(4 ** 2)
 
