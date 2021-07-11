@@ -14,11 +14,23 @@ count = 1
 
 while count <= target_int:
     new_int = input("Ingrese un entero {0}:".format(count))
-    count += 1
-    isint = False
     try:
         new_int = int(new_int)
     except:
         print("Debe ingresar un entero")
 
-print(type(new_int))
+
+    if type(new_int) is int:
+        ints.append(new_int)
+        count += 1
+
+print("Lista de enteros por un FOR")
+for value in ints:
+    print(str(value))
+
+print("Lista usando un loop While")
+total = len(ints)
+count = 0
+while count < total:
+    print(str(ints[count]))
+    count += 1
